@@ -1,9 +1,16 @@
-job('exampleapp') {
+pipelineJob('exampleapp') {
   definition {
     cpsScm {
-        scm {
-            git('https://github.com/ipcrm/example-app.git')
+      scm {
+        git {
+          remote {
+            url('https://github.com/ipcrm/example-app.git')
+          }
+          branch('*/main')
         }
+      }
+      lightweight()
     }
   }
 }
+
