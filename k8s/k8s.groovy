@@ -1,7 +1,7 @@
 pipelineJob('k8s infastructure') {
   definition {
     cpsScm {
-      git('https://github.com/lacework-dev/detc-resources.git','ipcrm/jenkins')
+      git branch: 'ipcrm/jenkins', url: 'https://github.com/lacework-dev/detc-resources.git'
     }
     scriptPath('jenkinsfiles/k8s/Jenkinsfile')
   }
