@@ -6,10 +6,8 @@ pipelineJob('exampleapp') {
           remote {
             url('https://github.com/ipcrm/example-app.git')
           }
-          branch('*/main')
         }
       }
-      lightweight()
     }
   }
 }
