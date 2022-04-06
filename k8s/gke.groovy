@@ -1,4 +1,4 @@
-pipelineJob('gke infastructure') {
+pipelineJob('gke infrastructure') {
   definition {
     cpsScm {
       scm {

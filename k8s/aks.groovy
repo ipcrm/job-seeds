@@ -1,4 +1,4 @@
-pipelineJob('aks infastructure') {
+pipelineJob('aks infrastructure') {
   definition {
     cpsScm {
       scm {
